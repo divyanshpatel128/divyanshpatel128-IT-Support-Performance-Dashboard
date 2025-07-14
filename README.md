@@ -1,4 +1,3 @@
-<img width="1797" height="1013" alt="Screenshot 2025-07-14 190920" src="https://github.com/user-attachments/assets/38a82635-0466-4d62-9e3c-349c03cc5ec9" /># 🧠 IT Support Analysis Dashboard | Power BI (FP20 Challenge #28)
 
 Welcome to my end-to-end Business Intelligence project, created for **FP20 Analytics Challenge #28 - Ticket to Resolution**.
 
@@ -23,72 +22,98 @@ This dashboard provides a comprehensive analysis of global IT support operations
 
 ---
 
-## 🔍 Business Questions Answered
+## 🔍 Business Questions & Answers
 
-**A. Ticket Types & Tags**
-- Which types of issues (Incidents, Requests, etc.) are most common?
-- What tags like “Security” or “Bug” appear most?
-- Which support queues are handling the most load?
+### A. Ticket Types & Tags
 
-**B. Resolution Time & Priority**
-- What is the average resolution time?
-- Do higher-priority tickets get resolved faster?
-- Which tickets take longest to resolve?
+**1. What kinds of issues (bugs, requests, features) come up most often?**  
+✔ Most tickets are **“Incidents”** and **“Requests”**.  
+✔ Top recurring tags: **“Bug”**, **“Technical”**, **“Security”**, and **“Performance”**.
 
-**C. Locations & Volume**
-- Which countries submit the most tickets?
-- Where are resolution delays most common?
+**2. Which support teams or queues handle the most tickets?**  
+✔ **Technical Support** and **Customer Service** queues handle over **50%** of the total ticket volume.
 
-**D. Process Improvement**
-- Can repeated issues be automated?
-- Are support responses aligned with ticket issues?
-- Where can service quality be improved?
+**3. How are different tags (like “Security”, “Integration”, or “Documentation”) used?**  
+✔ Tags are concentrated by issue type:
+- *“Security”* for login/access issues  
+- *“Bug”* and *“Technical”* for Incidents  
+- *“Documentation”* for requests or info gaps
 
 ---
+
+### B. Resolution Time & Priorities
+
+**4. How long does it take to resolve tickets, on average?**  
+✔ Avg Resolution Time: **~67.6 hours** (shown on KPI card)
+
+**5. Do higher-priority tickets get resolved faster?**  
+✔ Yes.  
+- **High Priority**: ~48 hrs  
+- **Medium Priority**: ~72 hrs  
+- **Low Priority**: ~96 hrs  
+
+**6. Which types of tickets take the longest to close?**  
+✔ **“Problem”** and **“Change”** tickets have the longest average resolution time.
+
+---
+
+### C. Locations & Volume
+
+**7. Which countries or regions submit the most tickets?**  
+✔ Top countries:  
+- 🇧🇪 Belgium  
+- 🇸🇪 Sweden  
+- 🇱🇻 Latvia
+
+**8. Are there certain locations that see more delays or specific issues?**  
+✔ Yes.  
+- Belgium + IT → Technical Support → High → Incident → Bug: Frequent and slower to resolve  
+- Country-to-tag trends visualized using **Sankey Chart**
+
+---
+
+### D. Process Improvement
+
+**9. Can we group similar tickets to create automated replies or help articles?**  
+✔ Yes. Tags like **“Login”**, **“Bug”**, and **“Security”** are repetitive.  
+👉 Recommend setting up **FAQs, Chatbots, and Auto-Replies**
+
+**10. Are the agent responses helpful and aligned with what the user asked?**  
+✔ Based on tag alignment and resolution tags, yes in most cases — but some “Documentation” and “Crash” issues indicate potential mismatches.
+
+**11. Where can the support team save time or improve service quality?**  
+✔ Focus on:
+- Departments like **Customer Operations** (high ticket count + long resolution)  
+- Repetitive issue types  
+- Seasonal peak months (**April, July, August**)
 
 ## 📊 Dashboard Pages
 
-### 1️⃣ Overview Dashboard
-- KPIs: Total Tickets, Avg. Resolution Time, % High Priority
-- Trends by Month, Type, Priority, Department
+1. **Overview Dashboard**  
+ • KPIs, Ticket Trends, Type, Priority, Resolution Time by Department
 
-### 2️⃣ Department Analysis
-- Primary Tag Breakdown
-- Day-wise Ticket Heatmap
-- Monthly Ticket Pattern
+2. **Department Analysis**  
+ • Primary Tags, Monthly Breakdown, Heatmap by Day, Department Load
 
-### 3️⃣ Country-Level Insights
-- Sankey Chart: Country → Queue → Priority → Type → Tag
-- Identifies bottlenecks and technical issues by region
+3. **Country-Level Flow (Sankey)**  
+ • Country → Department → Queue → Priority → Type → Tag flow analysis
 
 ---
 
-## 💡 Tools & Techniques Used
+## 🛠 Tools & Features
 
 - **Power BI Desktop**
-- **DAX Measures**
-- **Slicers**, **KPI Cards**, **Custom Tooltips**
-- **Heatmaps**, **Sankey Chart**, **Page Navigation**
-- **Bookmark Navigation + Drill-through**
-- **Parameter**
+- **DAX for KPI Cards, Averages, Filters**
+- **Sankey Chart**, **Heatmaps**, **Donut Charts**, **Tooltips**
+- **Page Navigation**, **Conditional Formatting**, **Bookmarks**
 
 ---
 
-## 📁 Project Files (optional if you want to upload):
+## 🙋 About Me
 
-- `IT_Support_Dataset.csv` *(or dataset reference)*
-- `Dashboard.pbix` *(Power BI file)*
-- `Screenshots/` *(dashboard images folder)*
+Hi! I’m **Divyansh Patel**, a self-taught Power BI developer working toward a BI Engineer/Data Analyst career.  
+This challenge was **100% built by me with no video tutorial**, using real business logic and dashboard storytelling.
 
----
+📌 [LinkedIn](https://www.linkedin.com/in/divyansh-patel-dataanalyst/)  
+⭐ If you find this helpful, please **star** the repo!
 
-## 🙋‍♂️ About Me
-
-Hi! I'm **Divyansh Patel**, an aspiring BI Engineer and Data Analyst. This project is part of my hands-on learning journey to solve real-world business problems using Power BI and DAX.
-
-🔗 [LinkedIn](https://www.linkedin.com/in/divyansh-patel-dataanalyst/)  
-📬 Feel free to connect and discuss the project!
-
----
-
-## ⭐ If you found this helpful, don’t forget to give the repo a star!
